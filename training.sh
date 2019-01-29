@@ -1,0 +1,2 @@
+#!/bin/bash
+opencv_traincascade -data classifier -vec positive.vec -bg negative.txt -numStages 20 -minHitRate 0.999 -maxFalseAlarmRate 0.5 -numPos 1000 -numNeg 1245 -w 48 -h 24 -mode ALL -precalcValBufSize 3000 -precalcIdxBufSize 3000
